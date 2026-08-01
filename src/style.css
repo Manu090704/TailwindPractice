@@ -9,3 +9,17 @@
 @utility grid-cols-autofit{
     grid-template-columns:repeat(auto-fit,minmax(13.75rem,1fr))
 }
+
+@layer base{
+    h1,
+    h2,
+    h3{
+        font-weight:700;
+    }
+}
+
+@layer components{
+    .button{
+        @apply inline-block bg-fuchsia-700 py-3 px-7 rounded-full hover:bg-fuchsia-600 transition-colors;
+    }
+}
